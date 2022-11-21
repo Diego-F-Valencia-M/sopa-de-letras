@@ -1,0 +1,107 @@
+#puzzle-container {
+  border: 1px solid black;
+  padding: 20px;
+  float: left;
+  margin: 30px 20px;
+  background-image: url(./img/fondo.jpg);
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#puzzle-container div {
+  width: 100%;
+  margin: 0 auto;
+}
+/* estilo para cada cuadrado del rompecabezas */
+
+#puzzle-container .puzzleSquare {
+  height: 30px;
+  width: 30px;
+  text-transform: uppercase;
+  background-color: white;
+  border: 0;
+  font: 1em sans-serif;
+}
+
+#puzzle-container button::-moz-focus-inner {
+  border: 0;
+}
+/* indica cuando se ha seleccionado un cuadrado */
+
+#puzzle-container .selected {
+  background-color: orange;
+}
+/* indica que el cuadrado es parte de una palabra que se ha encontrado */
+
+#puzzle-container .found {
+  background-color: blue;
+  color: white;
+}
+
+#puzzle-container .solved {
+  background-color: purple;
+  color: white;
+}
+/* indica que se han encontrado todas las palabras */
+
+#puzzle-container .complete {
+  background-color: green;
+}
+/**
+* Estilos para la lista de palabras
+*/
+
+#puzzle-words {
+  padding-top: 20px;
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  font-size: 18px;
+  column-count: 3;
+  column-gap: 20px;
+  width: 500px;
+  height: 450px;
+  border: 3px dotted cornflowerblue;
+  
+  
+}
+
+#puzzle-words ul {
+  list-style-type: none;
+  
+}
+
+#puzzle-words li {
+  padding: 3px 0;
+  font: 1em sans-serif;
+}
+/*indica que la palabra ha sido encontrada */
+
+#puzzle-words .wordFound {
+  text-decoration: line-through;
+  color: gray;
+}
+/**
+*  Estilos para el botón
+*/
+
+.boton{
+  display: flex;
+  justify-content: center;
+}
+
+#solveBTN {
+  margin-top: 20px;
+  width: 100px;
+  height: 35px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
